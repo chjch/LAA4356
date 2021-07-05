@@ -1,0 +1,5 @@
+.idea/
+__pycache__
+.vscode/
+Transit Accessibility Analyst*.xml
+.ipynb_checkpoints
