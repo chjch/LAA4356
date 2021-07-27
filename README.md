@@ -26,9 +26,9 @@ design is what we hope you to learn and develop.
 That said, all the tutorials below were prepared using ArcGIS Pro.
 
 1. [Software setup and datasets](tutorials/1-software_and_data.md).
-2. [Vector operations in GIS](tutorials/2-vector_gis.md).
-3. [Raster analysis in GIS](tutorials/3-raster_gis.md).
-4. [Suitability analysis with ArcGIS Pro](tutorials/4-suitability.md).
+2. [Get to know ArcGIS Pro](tutorials/2-learn_arcpro.md).
+3. [Landscape Design with Raster Data](tutorials/3-raster_design.md).
+4. [Introduction to Geoprocessing Tools for Raster Data](tutorials/4-raster_geoprocessing.md).
 5. [Using ModelBuilder to automate geoprocessing operations](tutorials/5-modelbuilder.md).
 6. [Create ArcGIS StoryMaps](tutorials/6-story_map.md)
 
