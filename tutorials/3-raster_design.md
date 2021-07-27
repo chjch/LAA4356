@@ -32,11 +32,14 @@ and [RGB composite](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster
 - different wavelengths from the ultraviolet through the visible and infrared portions of the electromagnetic spectrum <br> <img vspace="5px" src="img\rgb_composite.gif">
 - example: ```orthoNAIP1.tif```
 
-> :bulb: The term band originated from the reference to the color band on the
-> electromagnetic spectrum.
+> :bulb: The term **_band_** originated from the reference to the _color band_
+> on the electromagnetic spectrum.
 
 ### 1.3 Comparison
 
 |    single-band satellite image     |    3-band RGB composite satellite image    |
 |:----------------------------------:|:------------------------------------------:|
 | ![grayscale](img/grayscale.png)    | ![rgb_composite](img/rgb_composite.png)    |
+
+## 2. The Pixel Editor
+
