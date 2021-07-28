@@ -15,8 +15,8 @@ Data stored in a raster format represents **real-world phenomena**.
 
 ### 1.1 Single-band raster dataset
 
-Values in a single-band raster dataset can be used to represent temperature,
-elevation, soil pH value, etc.
+Values in a single-band raster dataset may represent temperature, elevation,
+soil pH value, etc.
 The three main ways to display single-band raster datasets are shown below.
 
 - using two colors (binary)
@@ -27,15 +27,26 @@ The three main ways to display single-band raster datasets are shown below.
 
 ### 1.2 Multiple-band raster dataset
 
-and [RGB composite](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-img/renderers-used-to-display-raster-data.htm#ESRI_SECTION2_6DA80CD25C02461BBD61A752F92D2E6D)
+<img align="right" src="img\rasterbands.png">
 
-- different wavelengths from the ultraviolet through the visible and infrared portions of the electromagnetic spectrum <br> <img vspace="5px" src="img\rgb_composite.gif">
-- example: ```orthoNAIP1.tif```
+When there are _multiple bands_, every cell location has more than one value
+associated with it.
+A satellite image, for example, commonly has multiple bands representing
+different wavelengths from the _ultraviolet_ through the _visible_ and
+_infrared_ portions of the electromagnetic spectrum.
+For example, the aerial photo (or basemap) of the study area,
+[orthoNAIP1.tif](1-software_and_data.md#2-introduction-to-the-gis-datasets),
+is a **3-band** [orthophoto](https://tinyurl.com/y4w7xp54) that is acquired
+from both aircraft (using digital camera) and satellite imagery.
+The three bands are RGB stands for red, green, and blue respectively.
+The RGB composite can display the raster dataset in **natural color**.
+
+![rgb composite](img/rgb_composite.gif)
 
 > :bulb: The term **_band_** originated from the reference to the _color band_
 > on the electromagnetic spectrum.
 
-### 1.3 Comparison
+### 1.3 Comparison between display in single band and multi-band
 
 |    single-band satellite image     |    3-band RGB composite satellite image    |
 |:----------------------------------:|:------------------------------------------:|
