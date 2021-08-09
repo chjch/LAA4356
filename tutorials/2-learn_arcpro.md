@@ -141,7 +141,7 @@ provide access to collections of items.
 ### 3.2 Create a _layout_
 
 A _page layout_ (often referred to simply as a
-[**layout**](https://tinyurl.com/fxyjvn9s)) is a collection of map elements
+[**layout**](https://tinyurl.com/3j6m7e5p)) is a collection of map elements
 organized on a virtual page designed for map **_printing_**.
 Common map elements include one or more
 [**map frames**](https://tinyurl.com/fxyjvn9s) (each containing an ordered set
@@ -151,3 +151,10 @@ descriptive text, and a **legend**.
 1. Insert a new _layout_.
 2. Add map frame to the layout.
 3. Add a _scale bar_, a _legend_, and a _north arrow_.
+
+This video below created by ESRI gives a higher-level overview related to
+basic functions and operations about the Layout.
+
+<a href="https://www.youtube.com/watch?v=NZ9ei4-23MM">
+  <img src="img/layout_video_timg.png" alt="ahp video" width="800">
+</a>

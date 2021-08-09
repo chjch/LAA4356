@@ -11,7 +11,7 @@
   https://www.geoplan.ufl.edu/software/arcgis-pro/ to obtain a copy of the
   software.
   Make sure you download the latest version i.e., ArcGIS Pro 2.8.
-  The file is located inside `AGP2.8` with a name of `ArcGISPro_26_175036.exe`.
+  The file is located inside `AGP2.8` with a name of `ArcGISPro_28_177688.exe`.
 - **Step 2 - Install**: Double-click the installation file you just downloaded
   from last step, follow the instructions to install the application on your
   computer.
@@ -64,5 +64,3 @@ If you have little experiences with ArcGIS Pro, the following materials are
 highly recommended.
 
 - [Introducing ArcGIS Pro](https://tinyurl.com/2p3txesw)
-- [ArcGIS Pro Essential Training](https://tinyurl.com/4dj67amf) (an
-  introductory course on **LinkedIn Learning**)

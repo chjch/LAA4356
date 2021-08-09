@@ -40,7 +40,7 @@
 
 ### 2.5. [Raster Calculator](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/raster-calculator.htm)
 
-- Input data: [elevation_ft.tif](../datasets/DEM/dem.md), [lulc2015.tif](../datasets/lulc/lulc.md)
+- Input data: [elevation_ft.tif](metadata/DEM/dem.md), [lulc2015.tif](../datasets/lulc/lulc.md)
 - [Map Algebra Expression](https://pro.arcgis.com/en/pro-app/help/analysis/spatial-analyst/mapalgebra/working-with-operators.htm)
 - Example functions:
   1. raise elevation by 10 feet.
