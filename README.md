@@ -34,10 +34,12 @@ That said, all the tutorials below were prepared using ArcGIS Pro.
 
 ## 2. Additional Resources
 
-1. [The general suitability modeling workflow](https://tinyurl.com/k7tey6m6).
-2. [What is the Suitability Modeler](https://tinyurl.com/au7txn4b).
-3. [ArcGIS Spatial Analyst extension](https://tinyurl.com/zr48m637).
-4. [GIS StackExchange](https://gis.stackexchange.com/)
+1. [ArcGIS Pro Essential Training](https://tinyurl.com/4dj67amf) (an
+   introductory course on **LinkedIn Learning**)
+2. [The general suitability modeling workflow](https://tinyurl.com/k7tey6m6).
+3. [What is the Suitability Modeler](https://tinyurl.com/au7txn4b).
+4. [ArcGIS Spatial Analyst extension](https://tinyurl.com/zr48m637).
+5. [GIS StackExchange](https://gis.stackexchange.com/)
 
 <br>
 
