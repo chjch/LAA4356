@@ -1,6 +1,6 @@
-# Tutorial 3 - Introduction to Geoprocessing Functions and Map Algebra
+# Tutorial 3 - Introduction to Geoprocessing and Map Algebra
 
-- [Tutorial 3 - Introduction to Geoprocessing Functions and Map Algebra](#tutorial-3---introduction-to-geoprocessing-functions-and-map-algebra)
+- [Tutorial 3 - Introduction to Geoprocessing and Map Algebra](#tutorial-3---introduction-to-geoprocessing-and-map-algebra)
   - [1. Understand Data in the Raster Format](#1-understand-data-in-the-raster-format)
     - [1.1 Single-band raster dataset](#11-single-band-raster-dataset)
     - [1.2 Multiple-band raster dataset](#12-multiple-band-raster-dataset)
@@ -191,7 +191,7 @@ Objective: Just need to know places where ALL of the criteria are met.
 Don’t care which ones or how many.
 
 - Landscape feature of interest = 1
-- Everything else = 0
+- Everything else = 0<br>
   ![multiply](img/map_algebra_multiply.svg)
 
 ### 4.2 Add binary values
@@ -200,7 +200,7 @@ Objective: Need to know how many criteria are met and rank order.
 Don’t need to identify unique criteria.
 
 - Landscape feature of interest = 1
-- Everything else = 0
+- Everything else = 0<br>
   ![addition](img/map_algebra_addition.svg)
 
 ### 4.3 Add unique values
@@ -209,7 +209,7 @@ Objective: Need to know how many criteria were met, what they are, and in what
 combinations.
 
 - Landscape feature of interest = 3, 5, 7, etc. (prime numbers)
-- Everything else = 0
+- Everything else = 0<br>
   ![unique](img/map_algebra_unique.svg)
 
 ## 5. Exercise - A test drive on overlay analysis
