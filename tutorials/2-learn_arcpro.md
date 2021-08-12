@@ -12,6 +12,9 @@
   - [3. Work with Symbology and Create a Layout](#3-work-with-symbology-and-create-a-layout)
     - [3.1 Add data to map view](#31-add-data-to-map-view)
     - [3.2 Create a _layout_](#32-create-a-layout)
+  - [4. Run Tools in ArcGIS Pro](#4-run-tools-in-arcgis-pro)
+    - [4.1 Finding a tool](#41-finding-a-tool)
+    - [4.2 Using a tool](#42-using-a-tool)
 
 ## 1. Create a Project in ArcGIS Pro
 
@@ -158,3 +161,66 @@ basic functions and operations about the Layout.
 <a href="https://www.youtube.com/watch?v=NZ9ei4-23MM">
   <img src="img/layout_video_timg.png" alt="ahp video" width="800">
 </a>
+
+## 4. Run Tools in ArcGIS Pro
+
+Tools are essential for conducting spatial analysis in ArcGIS Pro.
+Most _geoprocessing_ tools work on an input dataset to create an output
+dataset.
+Some tools modify the attributes or geometry of an input dataset.
+A few tools have other effects, such as creating selections on layers or
+generating messages or reports.
+
+As a simple example, say that we would like to identify areas within a half
+mile of **major roads** in the study area.
+Depending on the subject of the analysis, these areas can either be considered
+as (1) great transportation accessibility, (2) high volume of noise generated
+by traffic, etc.
+
+### 4.1 Finding a tool
+
+[Finding the right tool](https://tinyurl.com/5a9jmed6) for your task is
+essential.
+The [Select Layer by Attributes](https://tinyurl.com/yzjyvch9) allows you to
+_add_, _update_, or _remove_ a selection based on an attribute query.
+The [Buffer](https://tinyurl.com/yw9ance8) tool creates buffer polygons around
+input features to a specified distance.
+
+In ArcGIS Pro, you can find a tool in the following places:
+
+- **_Analysis_** ribbon tab.
+- **_Geoprocessing_** pane.
+- **_Search_** for a tool by name:
+  1. at the top of the Geoprocessing pane.
+  2. [Command Search](https://tinyurl.com/23y69b8p) box at the top of the
+     application.
+
+### 4.2 Using a tool
+
+Once you have found and opened a geoprocessing tool,
+[use it](https://tinyurl.com/565cxdkt) by entering **parameters** and running
+the tool.
+To get help for the open geoprocessing tool, hover over the Help button
+![Help](img/help_button_icon.png) or click the button to open the tool
+_help documentation_ page.
+
+First, we will select _major roads_ out of all the roads in the study area.
+We will use the following parameters.
+
+- Input Rows: `Streets.shp`.
+- Selection type: `New selection`.
+- Expression: `FUNC_CLASS IN ('2', '3')`.
+
+> :bulb:<br>
+> Note that, in ArcGIS, geoprocessing tools only operate on selected features.
+> This is a very important behavior of the software that you should always
+> keep in mind.
+
+Then, we will create buffers around the selected major roads.
+We will use the following parameters:
+
+- Input Features: `Streets.shp`.
+- Distance: `0.5 Miles`.
+- Side Type: `Full`.
+- Method: `Planar`.
+- Dissolve Type: `Dissolve all output features into a single feature`.
