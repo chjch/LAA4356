@@ -228,12 +228,12 @@
 						class="st9">Inside 100 year floodplain = 0</tspan></text>		</g>
 		<g id="shape23-61" v:mID="23" v:groupContext="shape" transform="translate(19,-200.132)">
 			<title>Sheet.23</title>
-			<desc>Criterion 2: Slope is less than 15% = 1 Everything else = 0</desc>
+			<desc>Criterion 2: Slope is less than 10% = 1 Everything else = 0</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="97.875" cy="329.079" width="195.75" height="70.8677"/>
 			<rect x="0" y="293.645" width="195.75" height="70.8677" class="st7"/>
 			<text x="4" y="321.88" class="st8" v:langID="1033"><v:paragraph v:bulletSize="0.166667"/><v:tabList/>Criterion 2:<v:newlineChar/><tspan
-						x="4" dy="1.5em" class="st9">Slope is less than 15% = 1<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
+						x="4" dy="1.5em" class="st9">Slope is less than 10% = 1<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
 						class="st9">Everything else = 0</tspan></text>		</g>
 		<g id="shape24-66" v:mID="24" v:groupContext="shape" transform="translate(19,-107.118)">
 			<title>Sheet.24</title>
