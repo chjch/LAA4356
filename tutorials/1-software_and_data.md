@@ -3,7 +3,10 @@
 - [Tutorial 1 - Software setup and introduction to datasets](#tutorial-1---software-setup-and-introduction-to-datasets)
   - [1. Install ArcGIS Pro](#1-install-arcgis-pro)
   - [2. Introduction to the GIS datasets](#2-introduction-to-the-gis-datasets)
-  - [3. Additional Resources](#3-additional-resources)
+  - [3. Create a Project in ArcGIS Pro](#3-create-a-project-in-arcgis-pro)
+    - [3.1 Open ArcGIS Pro](#31-open-arcgis-pro)
+    - [3.2 Create a new project](#32-create-a-new-project)
+    - [3.3 The project home folder](#33-the-project-home-folder)
 
 ## 1. Install ArcGIS Pro
 
@@ -58,9 +61,52 @@
 | [Topography](metadata/DEM/dem.md) | 26 <br> 27 <br> 28 <br> 29 | elevation_ft <br> aspect <br> hillshade <br> slope_ps | raster <br> raster <br> raster <br> raster | tiff <br> tiff <br> grid <br> grid | Elevation 10m DEM (in feet) <br> Aspect in degrees <br> Hillshade (azimuth 315, altitude 45) <br> Slope (percent rise)  |
 | Aerial Photo | 30 | orthoNAIP      | raster    | tiff        | 2015 [National Agriculture Imagery Program](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) (NAIP)   |
 
-## 3. Additional Resources
+## 3. Create a Project in ArcGIS Pro
 
-If you have little experiences with ArcGIS Pro, the following materials are
-highly recommended.
+ArcGIS Pro organizes your work into [projects](https://tinyurl.com/2r7vcje2).
+A **project** is a collection of related items—_maps_, _layouts_, *tables*,
+*charts*, *data connections*, and more—that contribute to a common purpose.
+The purpose may be to (a) analyze a problem, (b) to visualize a state of
+affairs, (c) to maintain or update a data model of infrastructure, or
+something else.
 
-- [Introducing ArcGIS Pro](https://tinyurl.com/2p3txesw)
+### 3.1 Open ArcGIS Pro
+
+The [Start page](https://tinyurl.com/5jdkbk64) consists of three sections
+(columns).
+
+1. The **Open** section: shows projects created recently.
+   You can also choose to
+   [**Open a project**](https://tinyurl.com/yv24vema).
+2. The **New** section: shows the [templates](https://tinyurl.com/jscpxv9f)
+   you can use to [Create a project](https://tinyurl.com/2yy9mt9r).
+   - **_Map_**: working with 2D data (ArcMap).
+   - **_Local_** and **_Global Scene_**: working with 3D data
+      (ArcScene and ArcGlobe).
+   - **_Catalog_**: Data management (ArcCatalog).
+3. The **Resources** section: include links to blogs, tutorials, documentation,
+   and highlights of recent development of the software.
+
+### 3.2 Create a new project
+
+Create a project using the **_Map_** template.
+
+1. Specify the project name, e.g., *Tutorial_1*.
+2. Choose a **folder** on your local drive to store the project.
+
+### 3.3 The project home folder
+
+- `Tutorial_1.aprx`: the _project file_ that you can **Double-click** to
+  open the project.
+- `Tutorial_1.gdb`: a [file geodatabase](https://tinyurl.com/4xtbkdc2), the
+  [_default_](https://tinyurl.com/nm23t36r) workspace storing output data of
+  [geoprocessing](https://tinyurl.com/3z98ewvf) tools.
+- `Tutorial_1.tbx`: the default [Toolbox](https://tinyurl.com/5ef7jhfy) where
+  new [_models_](https://tinyurl.com/usr7hktu) created in this project are
+  going to be stored.
+
+<img alt="proj_folder" vspace="5px" src="img/proj_folder.png">
+
+> :bulb: Don't lose your hard work.<br>
+> Remember to [Save a project](https://tinyurl.com/wh5u4e2r) frequently to
+> avoid losing your works.
