@@ -1,6 +1,6 @@
-# Tutorial 3 - Landscape Design with Raster Data
+# Tutorial 4 - Landscape Design with Raster Data
 
-- [Tutorial 3 - Landscape Design with Raster Data](#tutorial-3---landscape-design-with-raster-data)
+- [Tutorial 4 - Landscape Design with Raster Data](#tutorial-4---landscape-design-with-raster-data)
     - [1.4 Fundamental Properties of a Raster Dataset](#14-fundamental-properties-of-a-raster-dataset)
   - [2. Run Raster tools in ArcGIS Pro](#2-run-raster-tools-in-arcgis-pro)
     - [2.2.](#22)
