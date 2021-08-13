@@ -192,7 +192,7 @@ Don’t care which ones or how many.
 
 - Landscape feature of interest = 1
 - Everything else = 0<br>
-  ![multiply](img/map_algebra_multiply.svg)
+  <img src="img/map_algebra_multiply.svg" width=500>
 
 ### 4.2 Add binary values
 
@@ -201,7 +201,7 @@ Don’t need to identify unique criteria.
 
 - Landscape feature of interest = 1
 - Everything else = 0<br>
-  ![addition](img/map_algebra_addition.svg)
+  <img src="img/map_algebra_addition.svg" width=500>
 
 ### 4.3 Add unique values
 
@@ -210,7 +210,8 @@ combinations.
 
 - Landscape feature of interest = 3, 5, 7, etc. (prime numbers)
 - Everything else = 0<br>
-  ![unique](img/map_algebra_unique.svg)
+  <img src="img/map_algebra_unique.svg" width=500>
 
 ## 5. Exercise - A test drive on overlay analysis
 
+Please follow the instruction and complete the exercise [here](exercise1.md).
