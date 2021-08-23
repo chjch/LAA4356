@@ -1,60 +1,159 @@
-# Tutorial 4 - Landscape Design with Raster Data
+# Tutorial 4 - Spatial Analyst and Landscape Design with Raster Data
 
-- [Tutorial 4 - Landscape Design with Raster Data](#tutorial-4---landscape-design-with-raster-data)
-    - [1.4 Fundamental Properties of a Raster Dataset](#14-fundamental-properties-of-a-raster-dataset)
-  - [2. Run Raster tools in ArcGIS Pro](#2-run-raster-tools-in-arcgis-pro)
-    - [2.2.](#22)
-    - [2.3. Euclidean Distance](#23-euclidean-distance)
-    - [2.4. Slice (reclassification)](#24-slice-reclassification)
-    - [2.5. Raster Calculator](#25-raster-calculator)
-  - [3. Raster Processing Environment](#3-raster-processing-environment)
-  - [2. Create a Contour Map](#2-create-a-contour-map)
-    - [2.1 The Contour geoprocessing tool](#21-the-contour-geoprocessing-tool)
-    - [2.2 Working with symbology and label](#22-working-with-symbology-and-label)
+- [Tutorial 4 - Spatial Analyst and Landscape Design with Raster Data](#tutorial-4---spatial-analyst-and-landscape-design-with-raster-data)
+  - [1. Introduction to Tools in Spatial Analyst](#1-introduction-to-tools-in-spatial-analyst)
+    - [1.1 Extract by Attributes](#11-extract-by-attributes)
+    - [1.2 Expand](#12-expand)
+    - [1.3 Euclidean Distance](#13-euclidean-distance)
+    - [1.4. Slice (a reclassification tool)](#14-slice-a-reclassification-tool)
+  - [2. Raster Dataset Properties and Geoprocessing Environment](#2-raster-dataset-properties-and-geoprocessing-environment)
+    - [2.1 Extent](#21-extent)
+    - [2.2 Spatial Reference](#22-spatial-reference)
+    - [2.3 Raster Information](#23-raster-information)
+    - [2.4 Raster Processing Environment](#24-raster-processing-environment)
   - [3. The Pixel Editor](#3-the-pixel-editor)
     - [3.1 Preparation](#31-preparation)
     - [3.2 Interactively edit classified pixels](#32-interactively-edit-classified-pixels)
     - [3.3 Reclassify using information from a feature class](#33-reclassify-using-information-from-a-feature-class)
 
-### 1.4 Fundamental [Properties of a Raster Dataset](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/raster-dataset-properties.htm)
+## 1. Introduction to Tools in Spatial Analyst
 
-- Spatial Reference (projection): [GCS vs. PCS](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/)
-<br> <img alt="gcs_pcs" src="img/gcs_pcs.png" vspace="5px">
-- Extent: The top, bottom, left, and right coordinates of the rectangle (boundary) containing the raster dataset.
-- Cell Size: determines how detailed or coarse of the information presented by the raster dataset. <br> <img alt="cell_size" src="img/cellSize.gif" vspace="5px">
+The Spatial Analyst extension for ArcGIS Pro provides a suite of tools and
+capabilities for performing comprehensive, **_raster-based_** spatial analysis.
+The [raster calculator](3-raster_geoprocessing.md#4-map-algebra) we introduced
+in Tutorial 3 is an example of tools under the Spatial Analyst extension.
+Here in this tutorial, we introduce three additional tools in Spatial Analyst:
+_Extract by Attributes_, _Expand_, and _Euclidean Distance_.
 
-## 2. Run Raster tools in ArcGIS Pro
+### 1.1 Extract by Attributes
 
+The [Extract by Attributes](https://tinyurl.com/dbmr3nhh) tool extracts the
+cells **extracts** the cells of a raster based on a **_logical query_**.
 
+- Example 1: extract a single value
+  - Input raster: `lulc2015.tif`.
+  - Where clause: `DESCRIPTIO = 'School'`.
+- Example 2: extract multiple values
+  - Input raster: `lulc2015.tif`.
+  - Where clause: <code>DESCRIPTIO IN (
+                        'Low Density Residential (0-4 du/ac)',
+                        'Low Medium Density Residential (4-9 du/ac)',
+                        'Mixed Commercial/Residential',
+                        'High Density Residential (16+ dua/ac)',
+                        'Medium Density Residential (9-16 du/ac)')
+                  </code> OR
+                  <code>VALUE >= 30 And VALUE <= 34</code>
 
-### 2.2. 
+### 1.2 Expand
 
-### 2.3. [Euclidean Distance](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/euclidean-distance.htm)
+The [Expand](https://tinyurl.com/379536y2) tool **_expands_** specified zones
+of a raster by a specified number of cells.
+You could think of "Expand" as the raster version of the
+[_buffer_](2-learn_arcpro.md#31-finding-a-tool) tool we previously introduced
+in Tutorial 2.
+However, unlike the buffer tool which allows you to specify the distance, since
+raster data are formed by cells (pixels), we must also specify distances in
+terms of the number of cells.
 
-- Input data: [BusStops.shp](../datasets/transit.md)
-- Cell size: _100 meter_
-- Distance method: Planer (2D plane) vs. Geodesic (3D ellipsoid) <br> <img alt="euc_dist" src="img/eucdist.gif" vspace="5px">
+- Input raster: `lulc2015.tif`.
+- Number of cells: `20`.
+- Zone values: `22, 23, 24, 25, 26`
+- [Expand method](https://tinyurl.com/59dtcwjv): `Morphological`
 
-### 2.4. [Slice](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/slice.htm) (reclassification)
+### 1.3 Euclidean Distance
 
-- Input data: _output of **Euclidean Distance** tool_ <br><img alt="slice" src="img\slice.gif" vspace="5px">
+- Input feature source data: `BusStops.shp`.
+- Cell size: `100`
+- Distance method: Planer (2D plane) vs. Geodesic (3D ellipsoid) <br>
+  <img alt="euc_dist" src="img/eucdist.gif" vspace="5px">
 
-- Slice Method
-  - **_Equal interval_**: Determines the range of the input values and divides the range into the specified number of output zones. (same range with each zone)
-  - **_Equal area_**: Specifies that the input values will be divided into the specified number of output zones, with each zone having a similar number of cells. (same area with each zone)
-  - [**_Natural breaks_**](https://www.spatialanalysisonline.com/HTML/index.html?classification_and_clustering.htm#:~:text=Natural+breaks%2FJenks): Natural Breaks classes are based on natural groupings inherent in the data.Class breaks are identified that best group similar values and that maximize the differences between classes. Natural breaks are data-specific classifications and not useful for comparing multiple maps built from different underlying information. <br> <img alt="natural_breaks" src="img\naturalbreaks.png" vspace="5px">
+### 1.4. Slice (a reclassification tool)
 
-### 2.5. [Raster Calculator](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/raster-calculator.htm)
+The [Slice](https://tinyurl.com/4kyza4s) tool slices or **_reclassifies_** the
+range of values of the input cells into zones of (a) _equal interval_ or
+(b) _equal area_, or by (c) _natural breaks_.
 
-- Input data: [elevation_ft.tif](metadata/DEM/dem.md), [lulc2015.tif](../datasets/lulc/lulc.md)
-- [Map Algebra Expression](https://pro.arcgis.com/en/pro-app/help/analysis/spatial-analyst/mapalgebra/working-with-operators.htm)
-- Example functions:
-  1. raise elevation by 10 feet.
-  2. convert elevation from feet to meter (1 m = 3.28084 ft).
-  3. get residential only from lulc.
-  4. create a raster grid only contain elevation information for residential areas.
+- Input raster: _output of Euclidean Distance.
+- Number of output zones: `9`.<br>
+  <img alt="slice" src="img\slice.gif" vspace="5px">
+- Slice Method:
+  - `Equal interval` - Determines the range of the input values and divides
+    the range into the specified number of output zones. (same range with each
+    zone)
+  - `Equal area` - Specifies that the input values will be divided into the
+    specified number of output zones, with each zone having a similar number of
+    cells. (same area with each zone)
+  - [`Natural breaks`](https://tinyurl.com/4tnre3hm) - Natural Breaks classes
+    are based on _natural groupings_ inherent in the data.
+    Class breaks are identified that best group similar values and that
+    maximize the differences between classes.
+    Natural breaks are data-specific classifications and not useful for
+    comparing multiple maps built from different underlying information.<br>
+    <img alt="natural_breaks" src="img\naturalbreaks.png" vspace="5px">
+- Base zone for output: `1`.
 
-## 3. Raster Processing [Environment](https://pro.arcgis.com/en/pro-app/latest/tool-reference/environment-settings/an-overview-of-geoprocessing-environment-settings.htm)
+## 2. Raster Dataset Properties and Geoprocessing Environment
+
+Recall we have learned the basics about the raster format in
+[Tutorial 3](3-raster_geoprocessing.md#1-understand-data-in-the-raster-format).
+Now, let's dive deeper to get a better understanding about
+[Raster Dataset Properties](https://tinyurl.com/cw8fxab7).
+In this section we will talk about (1) _extent_, (2) _spatial reference_ and
+(3) _raster information_.
+
+> :bulb: Where to see properties of a raster dataset?<br>
+> You can access raster dataset properties through by <ins>right clicking</ins>
+> the raster either in the **_Contents_** pane or the **_Catalog_** pane.
+
+### 2.1 Extent
+
+The Extent section describes the rectangle or boundary containing the raster
+dataset.
+The top, bottom, left, and right coordinates of the rectangle are listed in the
+same spatial reference units in which the raster is stored.
+
+### 2.2 Spatial Reference
+
+To enable the data in each layer to integrate when displayed and queried, each
+layer in a _map_ must reference locations on the earth's surface in a common
+way.
+Coordinate systems provide this framework.
+There are, in general, two types of coordinate systems:
+[GCS vs. PCS](https://tinyurl.com/y4ysskj3).<br>
+<img alt="gcs_pcs" src="img/gcs_pcs.png" vspace="5px">
+
+A spatial reference is the coordinate system used to store each feature class
+and raster dataset, as well as other coordinate properties.
+The raster dataset's coordinate system is described in the Spatial Reference
+section.
+All the spatial reference's parameters are listed.
+A raster dataset can have an undefined coordinate system.
+
+### 2.3 Raster Information
+
+- Cell Size: determines how detailed or coarse of the information presented by
+  the raster dataset.<br>
+  <img alt="cell_size" src="img/cellSize.gif" vspace="5px">
+- Source type (controls how the data is rendered by default):
+  - Generic - Uses the application defaults for resampling and stretching.
+  - Elevation - Applies bilinear resampling and a Min-Max stretch.
+  - Thematic - Applies nearest neighbor resampling and a Standard Deviation
+    stretch.
+- Format: raster data can be stored and presented in many
+  [formats](https://tinyurl.com/3pacpvzu).
+  In ArcGIS Pro, _geodatabase raster_ is the native data structure.
+  Another format that is very popular is Tagged Image File Format (TIFF) which
+  does not require creating a File Geodatabase and can be read/write by many
+  open-source GIS software.
+
+### 2.4 Raster Processing [Environment](https://tinyurl.com/n6rfn2dp)
+
+[Geoprocessing environment](https://tinyurl.com/2t5mt3w3) settings are in
+effect, additional parameters that affect a tool's results.
+They differ from normal tool parameters in that they don't appear on a tool's
+dialog box (with certain exceptions).
+Rather, they are values you set once using a separate dialog box and are
+interrogated and used by tools when they are run.
 
 General info about [Geoprocessing environment settings](https://pro.arcgis.com/en/pro-app/latest/tool-reference/environment-settings/what-is-a-geoprocessing-environment.htm).
 
@@ -79,35 +178,6 @@ Save a raster grid for sharing (not FGDB)
 
 - [Soils.shp](../datasets/soils.md)
 - Value field: ```corsteel``` (Corrosion Steel): Susceptibility of uncoated steel to corrosion when in contact with the soil.
-
-## 2. Create a Contour Map
-
-Contours are lines that connect locations of equal value in a raster dataset
-that represents continuous phenomena such as **_elevation_**, _temperature_,
-_precipitation_, _pollution_, or _atmospheric pressure_.
-The line features connect cells of a constant value in the input.
-
-> :bulb:<br>
-> Contour lines are often generally referred to as isolines.
-> In terms of elevation, the areas where the contours are closer together
-> indicate the steeper locations.
-
-### 2.1 The Contour geoprocessing tool
-
-- _Input data_: [elevation_ft.tif](metadata/DEM/dem.md)
-- _Geoprocessing tool_: [Contour (Spatial Analyst)](https://tinyurl.com/d9rkh598)
-- _Parameters_
-  - Contour Interval: **1**
-  - Base contour: **0**
-  - Z factor: **0.3048**
-  - Contour type: **Contour**
-
-### 2.2 Working with symbology and label
-
-- Use color scheme: _Red-Yellow-Blue_
-- Add labels to contour map
-
-<img src="img/contour_map.png" alt="contour map" width=650>
 
 ## 3. The Pixel Editor
 
