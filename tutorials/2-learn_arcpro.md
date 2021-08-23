@@ -150,7 +150,7 @@ To get help for the open geoprocessing tool, hover over the Help button
 ![Help](img/help_button_icon.png) or click the button to open the tool
 _help documentation_ page.
 
-First, we will select _major roads_ out of all the roads in the study area.
+First, we will **select** _major roads_ out of all the roads in the study area.
 We will use the following parameters.
 
 - Input Rows: `Streets.shp`.
@@ -162,7 +162,7 @@ We will use the following parameters.
 > This is a very important behavior of the software that you should always
 > keep in mind.
 
-Then, we will create buffers around the selected major roads.
+Then, we will create **buffers** around the selected major roads.
 We will use the following parameters:
 
 - Input Features: `Streets.shp`.
