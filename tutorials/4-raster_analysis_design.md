@@ -10,7 +10,7 @@
     - [2.1 Extent](#21-extent)
     - [2.2 Spatial Reference](#22-spatial-reference)
     - [2.3 Raster Information](#23-raster-information)
-    - [2.4 Raster Processing Environment](#24-raster-processing-environment)
+    - [2.4 Geoprocessing Processing Environment](#24-geoprocessing-processing-environment)
   - [3. The Pixel Editor](#3-the-pixel-editor)
     - [3.1 Preparation](#31-preparation)
     - [3.2 Interactively edit classified pixels](#32-interactively-edit-classified-pixels)
@@ -18,8 +18,9 @@
 
 ## 1. Introduction to Tools in Spatial Analyst
 
-The Spatial Analyst extension for ArcGIS Pro provides a suite of tools and
-capabilities for performing comprehensive, **_raster-based_** spatial analysis.
+The [Spatial Analyst extension](https://tinyurl.com/eu85dmdj) for ArcGIS Pro
+provides a suite of tools and capabilities for performing comprehensive,
+**_raster-based_** spatial analysis.
 The [raster calculator](3-raster_geoprocessing.md#4-map-algebra) we introduced
 in Tutorial 3 is an example of tools under the Spatial Analyst extension.
 Here in this tutorial, we introduce three additional tools in Spatial Analyst:
@@ -96,12 +97,12 @@ range of values of the input cells into zones of (a) _equal interval_ or
 
 Recall we have learned the basics about the raster format in
 [Tutorial 3](3-raster_geoprocessing.md#1-understand-data-in-the-raster-format).
-Now, let's dive deeper to get a better understanding about
+Now, let's dive deeper and get a better understanding about
 [Raster Dataset Properties](https://tinyurl.com/cw8fxab7).
 In this section we will talk about (1) _extent_, (2) _spatial reference_ and
 (3) _raster information_.
 
-> :bulb: Where to see properties of a raster dataset?<br>
+> :bulb: **Where to see properties of a raster dataset**?<br>
 > You can access raster dataset properties through by <ins>right clicking</ins>
 > the raster either in the **_Contents_** pane or the **_Catalog_** pane.
 
@@ -109,8 +110,8 @@ In this section we will talk about (1) _extent_, (2) _spatial reference_ and
 
 The Extent section describes the rectangle or boundary containing the raster
 dataset.
-The top, bottom, left, and right coordinates of the rectangle are listed in the
-same spatial reference units in which the raster is stored.
+The _top_, _bottom_, _left_, and _right_ coordinates of the rectangle are
+listed in the same spatial reference units in which the raster is stored.
 
 ### 2.2 Spatial Reference
 
@@ -131,22 +132,22 @@ A raster dataset can have an undefined coordinate system.
 
 ### 2.3 Raster Information
 
-- Cell Size: determines how detailed or coarse of the information presented by
-  the raster dataset.<br>
+- **_Cell size_**: determines how detailed or coarse of the information
+  presented by the raster dataset.<br>
   <img alt="cell_size" src="img/cellSize.gif" vspace="5px">
-- Source type (controls how the data is rendered by default):
+- **_Source type_** (controls how the data is rendered by default):
   - Generic - Uses the application defaults for resampling and stretching.
   - Elevation - Applies bilinear resampling and a Min-Max stretch.
   - Thematic - Applies nearest neighbor resampling and a Standard Deviation
     stretch.
-- Format: raster data can be stored and presented in many
+- **_Format_**: raster data can be stored and presented in many
   [formats](https://tinyurl.com/3pacpvzu).
   In ArcGIS Pro, _geodatabase raster_ is the native data structure.
   Another format that is very popular is Tagged Image File Format (TIFF) which
   does not require creating a File Geodatabase and can be read/write by many
   open-source GIS software.
 
-### 2.4 Raster Processing [Environment](https://tinyurl.com/n6rfn2dp)
+### 2.4 Geoprocessing Processing Environment
 
 [Geoprocessing environment](https://tinyurl.com/2t5mt3w3) settings are in
 effect, additional parameters that affect a tool's results.
@@ -155,29 +156,32 @@ dialog box (with certain exceptions).
 Rather, they are values you set once using a separate dialog box and are
 interrogated and used by tools when they are run.
 
-General info about [Geoprocessing environment settings](https://pro.arcgis.com/en/pro-app/latest/tool-reference/environment-settings/what-is-a-geoprocessing-environment.htm).
+These [settings](https://tinyurl.com/n6rfn2dp) allow you to ensure that
+geoprocessing is performed in a controlled environment where you decide things
+such as the **processing extent** that limits processing to a specific
+geographic area, a coordinate system for all output geodatasets, and the cell
+size of output raster datasets.
 
-"**_MESC_**" are the four most important environment settings for raster analysis.
+"**_MESC_**" are four environment settings that are instrumental and frequently
+applied when working with tools in the Spatial Analyst extension or, more
+generally, in raster analysis.
 
-- [Mask](https://pro.arcgis.com/en/pro-app/tool-reference/environment-settings/mask.htm): set by feature class or raster dataset <br> <img vspace="5px" src="img\mask.gif">
-- [Extent](https://pro.arcgis.com/en/pro-app/tool-reference/environment-settings/output-extent.htm): set by feature class, raster dataset, or coordinates of the sides of the rectangle (Left, Right, Top, and Bottom). <br> <img vspace="5px" src="img\extent.png">
-- [Snap raster](https://pro.arcgis.com/en/pro-app/tool-reference/environment-settings/snap-raster.htm): set by a raster dataset. <br> 
-  |            no snapping raster            |            with snapping raster                |
-  |:----------------------------------------:|:----------------------------------------------:|
-  | ![snap_left](img/snapRaster_left.png) | ![snap_right](img/snapRaster_right.png)     |
+1. [**Mask**](https://tinyurl.com/4rs2pyjw): Set by feature class or raster
+   dataset <br> <img vspace="5px" src="img\mask.gif">
+2. [**Extent**](https://tinyurl.com/mm9f7ya7): Set by feature class, raster
+   dataset, or coordinates of the sides of the rectangle (Left, Right, Top, and
+   Bottom). <br> <img vspace="5px" src="img\extent.png">
+3. [**Snap raster**](https://tinyurl.com/4as9pxu7): Set by a raster dataset.
+   <br>
+   |       without _snapping raster_       |         with _snapping raster_          |
+   |:-------------------------------------:|:---------------------------------------:|
+   | ![snap_left](img/snapRaster_left.png) | ![snap_right](img/snapRaster_right.png) |
+4. [**Cell size**](https://tinyurl.com/47wrj2): Set by a raster dataset or
+   simply a number (the input raster's linear unit will be adopted as the unit
+   for cell size).
 
-- [Cell size](https://pro.arcgis.com/en/pro-app/tool-reference/environment-settings/cell-size.htm): set by a raster dataset or number.
-
-Example:
-
-1. Re-visit Euclidean Distance.
-2. Set the mask.
-
-Save a raster grid for sharing (not FGDB)
-
-
-- [Soils.shp](../datasets/soils.md)
-- Value field: ```corsteel``` (Corrosion Steel): Susceptibility of uncoated steel to corrosion when in contact with the soil.
+As an example, let's revisit the _Euclidean Distance_ tool and apply the MESC
+environment settings to see the effects of these environment parameters.
 
 ## 3. The Pixel Editor
 
