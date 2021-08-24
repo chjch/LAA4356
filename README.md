@@ -46,9 +46,11 @@ That said, all the tutorials below were prepared using ArcGIS Pro.
 10. [Polygon to Raster](tutorials/3-raster_geoprocessing.md#23-polygon-to-raster)
 11. [Raster Calculator](tutorials/3-raster_geoprocessing.md#4-map-algebra)
 12. [Reclassify](tutorials/3-raster_geoprocessing.md#3-raster-data-reclassification)
-13. [Select Layer by Attributes](tutorials/2-learn_arcpro.md#31-finding-a-tool)
-14. [Set Raster Properties](tutorials/4-raster_analysis_design.md#31-preparation)
-15. [Slice](tutorials/4-raster_analysis_design.md#14-slice-a-reclassification-tool)
+13. [Rescale by Function](tutorials/5-suitability.md#rescale)
+14. [Select Layer by Attributes](tutorials/2-learn_arcpro.md#31-finding-a-tool)
+15. [Set Raster Properties](tutorials/4-raster_analysis_design.md#31-preparation)
+16. [Slice](tutorials/4-raster_analysis_design.md#14-slice-a-reclassification-tool)
+17. [Weighted Sum](tutorials/5-suitability.md#13-weight-the-criteria-and-create-a-suitability-map)
 
 ## 3. Additional Resources
 
