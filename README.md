@@ -29,7 +29,7 @@ That said, all the tutorials below were prepared using ArcGIS Pro.
 2. [Get to know ArcGIS Pro](tutorials/2-learn_arcpro.md).
 3. [Introduction to Geoprocessing and Map Algebra](tutorials/3-raster_geoprocessing.md).
 4. [Spatial Analyst and Landscape Design with Raster Data](tutorials/4-raster_analysis_design.md).
-5. [Using ModelBuilder to automate geoprocessing operations](tutorials/5-suitability.md).
+5. [Suitability Analysis Workflow and Creating Contour Maps](tutorials/5-suitability.md).
 6. [Create ArcGIS StoryMaps](tutorials/6-story_map.md)
 
 ## 2. Geoprocessing Tools Covered
