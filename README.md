@@ -27,12 +27,30 @@ That said, all the tutorials below were prepared using ArcGIS Pro.
 
 1. [Software setup and datasets](tutorials/1-software_and_data.md).
 2. [Get to know ArcGIS Pro](tutorials/2-learn_arcpro.md).
-3. [Landscape Design with Raster Data](tutorials/3-raster_geoprocessing.md).
-4. [Introduction to Geoprocessing Tools for Raster Data](tutorials/4-raster_analysis_design.md).
+3. [Introduction to Geoprocessing and Map Algebra](tutorials/3-raster_geoprocessing.md).
+4. [Spatial Analyst and Landscape Design with Raster Data](tutorials/4-raster_analysis_design.md).
 5. [Using ModelBuilder to automate geoprocessing operations](tutorials/5-suitability.md).
 6. [Create ArcGIS StoryMaps](tutorials/6-story_map.md)
 
-## 2. Additional Resources
+## 2. Geoprocessing Tools Covered
+
+1. [Add Field](tutorials/3-raster_geoprocessing.md#21-add-field)
+2. [Buffer](tutorials/2-learn_arcpro.md#31-finding-a-tool)
+3. [Calculate Field](tutorials/3-raster_geoprocessing.md#21-add-field#22-calculate-field)
+4. [Contour](tutorials/5-suitability.md#21-the-contour-geoprocessing-tool)
+5. [Copy Raster](tutorials/3-raster_geoprocessing.md#31-preparation)
+6. [Euclidean Distance](tutorials/4-raster_analysis_design.md#13-euclidean-distance)
+7. [Expand](tutorials/4-raster_analysis_design.md#12-expand)
+8. [Extract by Attributes](tutorials/4-raster_analysis_design.md#11-extract-by-attributes)
+9. [Pixel Editor](tutorials/4-raster_analysis_design.md#3-the-pixel-editor)
+10. [Polygon to Raster](tutorials/3-raster_geoprocessing.md#23-polygon-to-raster)
+11. [Raster Calculator](tutorials/3-raster_geoprocessing.md#4-map-algebra)
+12. [Reclassify](tutorials/3-raster_geoprocessing.md#3-raster-data-reclassification)
+13. [Select Layer by Attributes](tutorials/2-learn_arcpro.md#31-finding-a-tool)
+14. [Set Raster Properties](tutorials/3-raster_geoprocessing.md#31-preparation)
+15. [Slice](tutorials/4-raster_analysis_design.md#14-slice-a-reclassification-tool)
+
+## 3. Additional Resources
 
 1. [ArcGIS Pro Essential Training](https://tinyurl.com/4dj67amf) (an
    introductory course on **LinkedIn Learning**)
