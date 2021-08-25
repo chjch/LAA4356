@@ -38,7 +38,7 @@
 
 ## 2. Introduction to the GIS datasets
 
-- **Download** from this [Dropbox link](https://tinyurl.com/44nw4u5r)
+- **Download** from this [Dropbox link](https://tinyurl.com/85tjxnvh)
   (password provided separately).
 - Critical to be aware and acquainted with what's available.
 - Identifying and acquiring useful datasets is an essential skill.
