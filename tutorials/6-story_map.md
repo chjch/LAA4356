@@ -32,3 +32,9 @@
    1. Open a web map from ArcGIS Online
    2. Add data/layers to the web map
    3. Configure the layers
+
+## Team Presentation
+
+- East section: https://storymaps.arcgis.com/stories/45b43b5f3478407b926960f29637cbbd
+- Central section: https://storymaps.arcgis.com/stories/1d24dd210df340efb42ab52056de08b6
+- West section: https://storymaps.arcgis.com/stories/74edc823a40d4ea2b5a8377deb8669a5
