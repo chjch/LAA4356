@@ -1,19 +1,31 @@
-# Test Drive on Overlay Analysis
+# Test Drive on Overlay Analysis: Exercise 1
+
+## Description
 
 Recall the _taxlot.shp_ introduced in
 [Tutorial 1](1-software_and_data.md#property).
 The _shapefile_ dataset contains three fields in its attribute table:
-ACTYBLT (actual year built), JV (just or market value of the parcel),
-DORUC (land use code).
+
+- _ACTYBLT_ (actual year built),
+- _JV_ (just or market value of the parcel), and
+- _DORUC_ (land use code).
 
 Create three raster datasets with the following criteria.
 
-- `'ACTYRBLT' < 1990`
-- `'JV' < 100000`
-- `'DORUC' >= '002'`
+1. `'ACTYRBLT' < 1990` (indicating at least a 60-year building by 2050)
+2. `'JV'/acre < 300000` (30<sup>th</sup> percentile of parcel value)
+3. `'DORUC' >= '001' AND 'DORUC' <= '009'` (current land use -- residential)
 
-On a single sheet of paper, type/write your name, the class title and the date
-in the upper right hand corner. Then, please answer the following questions:
+By combining these three criteria we find redevelopment opportunities for
+residential areas.
 
-1. How many 5m grid cells are out of the FEMA 100 year floodplain and outside of a 5% slope?  
-2. How many hectares meet your criteria? (i.e. calculate hectares based on grid cell count)
+## Assignment
+
+Open a new word document, type your name, the class title, and the date in the
+upper right corner.
+Then, please answer the following questions:
+
+1. How many 5m grid cells meet criteria 1 and 2, but not 3?
+2. What does meeting criteria 1 and 2 tell you about the grid cell?
+3. How many hectares meet all the criteria? (i.e. calculate hectares based on
+   grid cell count)
