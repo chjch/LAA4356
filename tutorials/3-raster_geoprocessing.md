@@ -214,4 +214,5 @@ combinations.
 
 ## 5. Exercise - A test drive on overlay analysis
 
-Please follow the instruction and complete the exercise [here](exercise1.md).
+Please follow the instruction and complete [Exercise 1](exercise1.md) and
+[Exercise 2](exercise2.md)
