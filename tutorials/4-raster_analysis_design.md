@@ -5,7 +5,8 @@
     - [1.1 Extract by Attributes](#11-extract-by-attributes)
     - [1.2 Expand](#12-expand)
     - [1.3 Euclidean Distance](#13-euclidean-distance)
-    - [1.4. Slice (a reclassification tool)](#14-slice-a-reclassification-tool)
+    - [1.4 Median Center](#14-median-center)
+    - [1.5 Slice (a reclassification tool)](#15-slice-a-reclassification-tool)
   - [2. Raster Dataset Properties and Geoprocessing Environment](#2-raster-dataset-properties-and-geoprocessing-environment)
     - [2.1 Extent](#21-extent)
     - [2.2 Spatial Reference](#22-spatial-reference)
@@ -36,8 +37,7 @@ cells **extracts** the cells of a raster based on a **_logical query_**.
   - Where clause: `DESCRIPTIO = 'School'`.
 - Example 2: extract multiple values
   - Input raster: `lulc2015.tif`.
-  - Where clause: <code>DESCRIPTIO IN (
-                        'Low Density Residential (0-4 du/ac)',
+  - Where clause: <code>DESCRIPTIO IN ('Low Density Residential (0-4 du/ac)',
                         'Low Medium Density Residential (4-9 du/ac)',
                         'Mixed Commercial/Residential',
                         'High Density Residential (16+ dua/ac)',
@@ -68,7 +68,31 @@ terms of the number of cells.
 - Distance method: Planer (2D plane) vs. Geodesic (3D ellipsoid) <br>
   <img alt="euc_dist" src="img/eucdist.gif" vspace="5px">
 
-### 1.4. Slice (a reclassification tool)
+### 1.4 Median Center
+
+The [Median Center](https://tinyurl.com/nfv2y72e) tool is a measure of
+**_central tendency_** that is **robust** to outliers.
+It identifies the location that <ins>minimizes travel</ins> from it to all
+other features in the dataset.
+
+> :bulb: Robust to outliers
+> For example, if you were to compute the
+> [Mean Center](https://tinyurl.com/575zt29z) for a compact cluster of points,
+> the result would be a location at the center of the cluster.
+> If you then added a new point far away from the cluster and recomputed the
+> Mean Center, you would notice that the result would be pulled toward the new
+> outlier.
+> If you were to perform this same experiment using the Median Center tool,
+> however, you would see that the new outlier has a much smaller impact on the
+> result location.
+
+- Input feature source data: `taxlot.shp`.
+- Select layer by Attribute: <code>DORUC IN ('011', '016', '012', '017', '018',
+                                   '019', '021', '022', '023', '025', '027',
+                                   '030', '039')
+                             </code> get all the commercial (business) parcels.
+
+### 1.5 Slice (a reclassification tool)
 
 The [Slice](https://tinyurl.com/4kyza4s) tool slices or **_reclassifies_** the
 range of values of the input cells into zones of (a) _equal interval_ or
