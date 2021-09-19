@@ -1,0 +1,166 @@
+<?xml version = "1.0" standalone = "no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="583" height="274" style="box-sizing: inherit; font-family: Calibri;">
+  <rect id="backgroundRect" width="100%" height="100%" x="0" y="0" fill="rgb(63,63,63)" fill-opacity="1" visibility="visible" style="box-sizing: inherit; fill: rgb(63, 63, 63); fill-opacity: 1;" />
+  <defs style="box-sizing: inherit;" />
+  <clipPath id="chartRect177102" style="box-sizing: inherit;">
+    <rect x="-1" y="-1" width="585" height="276" style="box-sizing: inherit;" />
+  </clipPath>
+  <g class="wj-header" style="box-sizing: inherit; background: rgb(238, 238, 238); color: rgb(68, 68, 68); font-weight: 700;" clip-path="url(#chartRect177102)">
+    <text x="108.3" y="23.0" fill="rgb(225,225,225)" class="wj-title" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 16pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">Distance to park and recreational areas</text>
+  </g>
+  <g class="wj-footer" style="box-sizing: inherit;" clip-path="url(#chartRect177102)" />
+  <clipPath id="legRect851971" style="box-sizing: inherit;">
+    <rect x="487" y="125" width="97" height="52" style="box-sizing: inherit;" />
+  </clipPath>
+  <g class="wj-legend" style="box-sizing: inherit;" clip-path="url(#legRect851971)">
+    <g style="box-sizing: inherit;">
+      <line stroke="rgb(0,255,197)" stroke-width="1" x1="491.5" x2="501.5" y1="138.5" y2="138.5" stroke-opacity="1" style="box-sizing: inherit;" />
+      <text x="505.5" y="144.0" class="wj-label" fill="rgb(225,225,225)" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">Mean : 521</text>
+    </g>
+    <g style="box-sizing: inherit;">
+      <line stroke="rgb(255,190,232)" stroke-width="1" x1="491.5" x2="501.5" y1="163.5" y2="163.5" stroke-opacity="1" style="box-sizing: inherit;" />
+      <text x="505.5" y="169.0" class="wj-label" fill="rgb(225,225,225)" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">StdDev : 365</text>
+    </g>
+  </g>
+  <g class="wj-plot-area" style="box-sizing: inherit;">
+    <rect fill="#000000" stroke-width="1" x="100.3" y="45.0" width="371.1" height="182.6" fill-opacity="0" style="box-sizing: inherit;" />
+  </g>
+  <g class="wj-axis-x" style="box-sizing: inherit;" clip-path="url(#chartRect177102)">
+    <g transform="rotate(-45.0,91.7,239.2)" style="box-sizing: inherit;">
+      <text x="88.1" y="244.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">0</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="100.3" x2="100.3" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,109.8,244.3)" style="box-sizing: inherit;">
+      <text x="99.0" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">117</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="123.5" x2="123.5" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,133.0,244.3)" style="box-sizing: inherit;">
+      <text x="122.2" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">233</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="146.6" x2="146.6" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,156.2,244.3)" style="box-sizing: inherit;">
+      <text x="145.4" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">350</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="169.8" x2="169.8" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,179.0,244.6)" style="box-sizing: inherit;">
+      <text x="167.8" y="250.1" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">466</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="193.0" x2="193.0" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,202.6,244.3)" style="box-sizing: inherit;">
+      <text x="191.8" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">583</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="216.2" x2="216.2" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,225.8,244.3)" style="box-sizing: inherit;">
+      <text x="215.0" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">699</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="239.4" x2="239.4" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,249.0,244.3)" style="box-sizing: inherit;">
+      <text x="238.2" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">816</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="262.6" x2="262.6" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,272.2,244.3)" style="box-sizing: inherit;">
+      <text x="261.4" y="249.7" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">932</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="285.8" x2="285.8" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,292.8,246.8)" style="box-sizing: inherit;">
+      <text x="278.4" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1049</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="309.0" x2="309.0" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,316.0,246.8)" style="box-sizing: inherit;">
+      <text x="301.6" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1165</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="332.2" x2="332.2" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,339.2,246.8)" style="box-sizing: inherit;">
+      <text x="324.8" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1282</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="355.4" x2="355.4" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,362.4,246.8)" style="box-sizing: inherit;">
+      <text x="348.0" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1398</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="378.6" x2="378.6" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,385.6,246.8)" style="box-sizing: inherit;">
+      <text x="371.2" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1515</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="401.8" x2="401.8" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,408.8,246.8)" style="box-sizing: inherit;">
+      <text x="394.4" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1631</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="425.0" x2="425.0" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,432.0,246.8)" style="box-sizing: inherit;">
+      <text x="417.6" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1748</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="448.1" x2="448.1" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <g transform="rotate(-45.0,455.2,246.8)" style="box-sizing: inherit;">
+      <text x="440.8" y="252.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">1864</text>
+    </g>
+    <line stroke="#666" stroke-width="1" x1="471.3" x2="471.3" y1="227.6" y2="231.6" class="wj-tick" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-width: 1px;" />
+    <line stroke="rgb(170,170,170)" stroke-width="1px" x1="100.3" x2="471.3" y1="227.6" y2="227.6" class="wj-line" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+  </g>
+  <g class="wj-axis-y" style="box-sizing: inherit;" clip-path="url(#chartRect177102)">
+    <text x="80.1" y="233.1" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">0</text>
+    <line stroke="rgb(225,225,225)" stroke-width="1px" x1="100.3" x2="471.3" y1="184.7" y2="184.7" class="wj-gridline" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; opacity: 0.75; stroke: rgb(225, 225, 225); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+    <text x="48.4" y="190.2" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">50,000</text>
+    <line stroke="rgb(225,225,225)" stroke-width="1px" x1="100.3" x2="471.3" y1="141.7" y2="141.7" class="wj-gridline" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; opacity: 0.75; stroke: rgb(225, 225, 225); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+    <text x="41.3" y="147.2" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">100,000</text>
+    <line stroke="rgb(225,225,225)" stroke-width="1px" x1="100.3" x2="471.3" y1="98.7" y2="98.7" class="wj-gridline" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; opacity: 0.75; stroke: rgb(225, 225, 225); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+    <text x="41.3" y="104.2" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">150,000</text>
+    <line stroke="rgb(225,225,225)" stroke-width="1px" x1="100.3" x2="471.3" y1="55.8" y2="55.8" class="wj-gridline" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; opacity: 0.75; stroke: rgb(225, 225, 225); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+    <text x="41.3" y="61.3" fill="rgb(225,225,225)" class="wj-label" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 10pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">200,000</text>
+    <g transform="rotate(-90.0,10.5,136.3)" style="box-sizing: inherit;">
+      <text x="-11.2" y="142.8" fill="rgb(225,225,225)" class="wj-title" fill-opacity="1" style="box-sizing: inherit; cursor: default; font-size: 12pt; font-family: 'Segoe UI'; font-style: normal; font-weight: normal; fill: rgb(225, 225, 225); fill-opacity: 1;">Count</text>
+    </g>
+    <line stroke="rgb(170,170,170)" stroke-width="1px" x1="100.3" x2="100.3" y1="45.0" y2="227.6" class="wj-line" stroke-opacity="1" stroke-dasharray="none" style="box-sizing: inherit; stroke: rgb(170, 170, 170); stroke-opacity: 1; stroke-width: 1px; stroke-dasharray: none;" />
+  </g>
+  <g class="wj-series-group" style="box-sizing: inherit;">
+    <g style="box-sizing: inherit;" clip-path="url(#plotRect450395)">
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="100.3" y="53.7" width="11.6" height="174.0" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="111.9" y="78.4" width="11.6" height="149.3" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="123.5" y="72.9" width="11.6" height="154.8" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="135.1" y="63.6" width="11.6" height="164.0" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="146.6" y="63.1" width="11.6" height="164.6" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="158.2" y="72.1" width="11.6" height="155.5" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="169.8" y="70.1" width="11.6" height="157.5" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="181.4" y="74.4" width="11.6" height="153.2" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="193.0" y="86.8" width="11.6" height="140.8" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="204.6" y="97.0" width="11.6" height="130.7" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="216.2" y="103.9" width="11.6" height="123.7" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="227.8" y="115.8" width="11.6" height="111.9" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="239.4" y="128.2" width="11.6" height="99.4" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="251.0" y="137.2" width="11.6" height="90.5" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="262.6" y="145.7" width="11.6" height="81.9" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="274.2" y="153.3" width="11.6" height="74.4" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="285.8" y="159.0" width="11.6" height="68.6" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="297.4" y="164.9" width="11.6" height="62.8" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="309.0" y="172.6" width="11.6" height="55.1" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="320.6" y="183.5" width="11.6" height="44.1" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="332.2" y="194.0" width="11.6" height="33.6" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="343.8" y="201.4" width="11.6" height="26.2" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="355.4" y="206.7" width="11.6" height="21.0" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="367.0" y="210.3" width="11.6" height="17.4" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="378.6" y="213.4" width="11.6" height="14.3" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="390.2" y="215.2" width="11.6" height="12.4" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="401.8" y="217.8" width="11.6" height="9.8" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="413.4" y="220.6" width="11.6" height="7.0" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="425.0" y="224.2" width="11.6" height="3.5" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="436.6" y="225.8" width="11.6" height="1.8" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="448.1" y="226.9" width="11.6" height="0.7" fill-opacity="0.7" style="box-sizing: inherit;" />
+      <rect fill="rgb(166,206,227)" stroke="rgb(166,206,227)" x="459.7" y="227.4" width="11.6" height="0.3" fill-opacity="0.7" style="box-sizing: inherit;" />
+    </g>
+    <g style="box-sizing: inherit;">
+      <polyline stroke="rgb(0,255,197)" stroke-width="2" fill="none" points="203.9,227.6 203.9,45.0 " clip-path="url(#plotRect450395)" stroke-opacity="1" style="box-sizing: inherit;" />
+    </g>
+    <g style="box-sizing: inherit;">
+      <polyline stroke="rgb(255,190,232)" stroke-width="2" fill="none" points="131.3,227.6 131.3,45.0 " clip-path="url(#plotRect450395)" stroke-opacity="1" style="box-sizing: inherit;" />
+      <polyline stroke="rgb(255,190,232)" stroke-width="2" fill="none" points="276.5,227.6 276.5,45.0 " clip-path="url(#plotRect450395)" stroke-opacity="1" style="box-sizing: inherit;" />
+    </g>
+  </g>
+  <clipPath id="plotRect450395" style="box-sizing: inherit;">
+    <rect x="99" y="44" width="373" height="185" style="box-sizing: inherit;" />
+  </clipPath>
+  <clipPath id="plotRect460877" style="box-sizing: inherit;">
+    <rect x="-1" y="-1" width="373" height="185" style="box-sizing: inherit;" />
+  </clipPath>
+  <g class="wj-chart-annotationlayer" transform="translate(100.265625, 45)" style="box-sizing: inherit;" clip-path="url(#plotRect460877)" />
+</svg>
