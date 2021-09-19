@@ -149,7 +149,7 @@ After conducting a suitability analysis (obtaining a suitability map), we need
 to go back to the goal, that is finding suitable sites for a specified land
 use.
 This process of finding suitable sites (areas) is generally referred to as
-allocation.
+**allocation**.
 Fortunately, with recent developments in ArcGIS Pro, we are offered a new tool
 just for this purpose.
 
