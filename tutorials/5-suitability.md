@@ -145,6 +145,14 @@ multiple criteria.
 
 ## 2. Locate Regions
 
+After conducting a suitability analysis (obtaining a suitability map), we need
+to go back to the goal, that is finding suitable sites for a specified land
+use.
+This process of finding suitable sites (areas) is generally referred to as
+allocation.
+Fortunately, with recent developments in ArcGIS Pro, we are offered a new tool
+just for this purpose.
+
 The [Locate Regions](https://tinyurl.com/6cx7unub) tool identifies the best
 regions, or groups of contiguous cells, from an input utility (**suitability**)
 raster that satisfies a specified evaluation criterion and that meet identified
