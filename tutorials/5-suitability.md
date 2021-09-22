@@ -6,9 +6,10 @@
     - [1.2 Transform to a common suitability scale](#12-transform-to-a-common-suitability-scale)
     - [1.3 Weight the criteria and create a suitability map](#13-weight-the-criteria-and-create-a-suitability-map)
   - [2. Locate Regions](#2-locate-regions)
-  - [3. Create a Contour Map](#3-create-a-contour-map)
-    - [3.1 The Contour geoprocessing tool](#31-the-contour-geoprocessing-tool)
-    - [3.2 Working with symbology and label](#32-working-with-symbology-and-label)
+  - [3. Combine](#3-combine)
+  - [4. Create a Contour Map](#4-create-a-contour-map)
+    - [4.1 The Contour geoprocessing tool](#41-the-contour-geoprocessing-tool)
+    - [4.2 Working with symbology and label](#42-working-with-symbology-and-label)
 
 ## 1. The General Workflow of Suitability Analysis
 
@@ -174,7 +175,24 @@ the region.
 Check out this [link](https://tinyurl.com/ywuud5zp) to learn more about the
 Region Growing algorithm used by the Locate Regions tool.
 
-## 3. Create a Contour Map
+## 3. Combine
+
+The [combine](https://tinyurl.com/jc6tk8s3) tool combines multiple rasters so
+that a unique output value is assigned to each unique combination of input
+values.
+
+![combine](img/combine.png)
+
+**Notes on the output**:
+
+- Each unique combination gets a (_new_) value in the output and the count
+  associated with the value indicating the number of occurrence of that
+  particular combination.
+- NoData combines with any other value (including NoData) returns NoData.
+- Attributes other than the **_value_** in the original rasters will lose in
+  the output.
+
+## 4. Create a Contour Map
 
 Contours are lines that connect locations of equal value in a raster dataset
 that represents continuous phenomena such as **_elevation_**, _temperature_,
@@ -186,7 +204,7 @@ The line features connect cells of a constant value in the input.
 > In terms of elevation, the areas where the contours are closer together
 > indicate the steeper locations.
 
-### 3.1 The Contour geoprocessing tool
+### 4.1 The Contour geoprocessing tool
 
 - _Input data_: [elevation_ft.tif](metadata/DEM/dem.md)
 - _Geoprocessing tool_: [Contour (Spatial Analyst)](https://tinyurl.com/d9rkh598)
@@ -196,7 +214,7 @@ The line features connect cells of a constant value in the input.
   - Z factor: **0.3048**
   - Contour type: **Contour**
 
-### 3.2 Working with symbology and label
+### 4.2 Working with symbology and label
 
 - Use color scheme: _Red-Yellow-Blue_
 - Add labels to contour map
